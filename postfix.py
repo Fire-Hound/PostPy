@@ -68,7 +68,7 @@ class Postify:
                     break
                 self.expression.append(item)
 #-------USAGE---------
-expr = "(a+b)*d"
-a = Postify(expr)
-print(a.expression)
-print(a.stack)
+#expr = "(a+b)*d"
+#a = Postify(expr)
+#print(a.expression)
+#print(a.stack)
