@@ -67,7 +67,7 @@ class Postify:
                 if item == '(':
                     break
                 self.expression.append(item)
-
+#-------USAGE---------
 expr = "(a+b)*d"
 a = Postify(expr)
 print(a.expression)
