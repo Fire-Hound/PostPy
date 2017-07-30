@@ -5,6 +5,7 @@ class Postify:
         self.expression = []
         self.stack = []
         self.operators = ['+', '-', '/', '*', '^', '(', ')']
+        data = "".join(data.split()) # Removing whitespace
         self.postify(data)
 
 
