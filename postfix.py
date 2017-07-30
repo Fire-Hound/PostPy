@@ -39,6 +39,7 @@ class Postify:
                     self.PUSH(d)
             else:
                 self.expression.append(d)
+                
     def is_of_same_presidence(self, operator):
         if operator in ['(', ')'] and self.stack[-1] in ['(', ')']:
             return True
@@ -50,6 +51,7 @@ class Postify:
             return True
         else:
             return False
+        
     def is_of_high_presidence(self, operator):
         presidence = ['(',')','^','/','*','+','-']
         presidence_index = [4,4,3,2,2,1,1]
@@ -59,8 +61,8 @@ class Postify:
             return True
         else:
             return False
+        
     def POP_until_Lbracket(self):
-
             while True:
                 item = self.POP()
 
